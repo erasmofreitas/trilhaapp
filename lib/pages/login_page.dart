@@ -120,7 +120,7 @@ class _LoginPageState extends State<LoginPage> {
                           Icons.lock,
                           color: Color.fromARGB(255, 141, 79, 151),
                         ),
-                        suffix: InkWell(
+                        suffixIcon: InkWell(
                           onTap: () {
                             setState(() {
                               isObscureText = !isObscureText;
@@ -156,7 +156,7 @@ class _LoginPageState extends State<LoginPage> {
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
                             const SnackBar(
-                                content: Text("Erro ao efeturar o login")));
+                                content: Text("Erro ao efetuar o login")));
                       }
                     },
                     style: ButtonStyle(
